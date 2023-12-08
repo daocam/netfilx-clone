@@ -14,14 +14,13 @@ interface LinkProps {
 
 const links: LinkProps[] = [
   {name: "Home", href: "/home"},
-  {name: "TV Shows", href: "home/tv-shows"},
-  {name: "Movies", href: "home/movies"},
-  {name: "Recently added", href: "home/recently"},
-  {name: "My List", href: "home/user/list"},  
+  {name: "TV Shows", href: "/home/shows"},
+  {name: "Movies", href: "/home/movies"},
+  {name: "Recently added", href: "/home/recently"},
+  {name: "My List", href: "/home/user/list"},  
 ];
 
 export default function Navbar() {
-
   const pathname = usePathname();
 
   return (
@@ -53,7 +52,6 @@ export default function Navbar() {
                   </Link>
                 </li>
               )}
-              
             </div>
           ))}
         </ul>
