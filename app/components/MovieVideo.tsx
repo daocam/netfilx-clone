@@ -8,6 +8,7 @@ const getData = async () => {
       imageString: true, 
       title: true, 
       age: true, 
+      videoSource: true,
       duration: true, 
       overview: true,
       release: true, 
@@ -27,7 +28,7 @@ export default async function MovieVideo() {
         autoPlay
         loop
         muted
-        src={data?.youtubeString}
+        src={data?.videoSource}
         className="w-full absolute top-0 left-0 h-[60vh] object-cover -z-10 brightness-[60%]"
       ></video>
 
